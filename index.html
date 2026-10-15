@@ -2,55 +2,65 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Untuk Nayla 💗</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffb6d5, #ffc8e8, #fff0f6);
-      color: #8b2455;
-    }
-    .card {
-      background: rgba(255,255,255,.85);
-      padding: 30px 22px;
-      margin: 20px;
-      border-radius: 25px;
-      box-shadow: 0 8px 30px #d65b8b44;
-      max-width: 350px;
-    }
-    h1 { color: #e84393; }
-    button {
-      background: #ff5c9d;
-      color: white;
-      border: 0;
-      border-radius: 25px;
-      padding: 13px 22px;
-      font-size: 16px;
-    }
-    #pesan { display: none; line-height: 1.8; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Nayla 💗</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #ff9aaf, #f45b91, #a64ac9);
+  padding: 20px;
+}
+.card {
+  background: rgba(255,255,255,.18);
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 25px;
+  padding: 30px 22px;
+  max-width: 390px;
+  width: 100%;
+  box-shadow: 0 10px 35px #81205244;
+}
+.heart { font-size: 65px; }
+h1 { font-size: 30px; }
+p { line-height: 1.8; }
+button {
+  border: 0;
+  border-radius: 30px;
+  background: white;
+  color: #e74786;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 22px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+#pesan { display: none; }
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>Untuk Nayla 💗</h1>
-    <p>Ada sesuatu yang ingin aku sampaikan...</p>
-    <button onclick="document.getElementById('pesan').style.display='block';this.style.display='none'">
-      Buka Pesan 💌
-    </button>
-    <div id="pesan">
-      <h2>Hai, Nayla! 🌷</h2>
-      <p>Aku senang bisa mengenal kamu.</p>
-      <p>Kamu punya cara tersendiri untuk membuat hari-hariku terasa lebih indah.</p>
-      <p>Aku cuma ingin kamu tahu kalau kamu adalah seseorang yang spesial buatku. 💗</p>
-      <p>Semoga kamu selalu bahagia yaa! 🌸</p>
-    </div>
+<main class="card">
+  <div class="heart">💗</div>
+  <h1>Untuk Nayla</h1>
+  <p>Hai, Nayla! Ada sesuatu yang ingin aku sampaikan buat kamu... 🥹</p>
+  <button onclick="bukaPesan()">Buka Pesan 💌</button>
+  <div id="pesan">
+    <p>Aku senang bisa mengenal kamu. Kamu punya tempat spesial di pikiranku. 💖</p>
+    <p>Semoga kamu selalu bahagia dan hari-harimu dipenuhi hal-hal baik. 🌷</p>
+    <p>— Seseorang yang ingin membuatmu tersenyum 💕</p>
   </div>
+</main>
+<script>
+function bukaPesan() {
+  document.getElementById("pesan").style.display = "block";
+}
+</script>
 </body>
 </html>
